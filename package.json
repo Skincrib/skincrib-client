@@ -1,0 +1,24 @@
+{
+  "name": "skincrib-client",
+  "version": "1.0.0",
+  "description": "Package for interacting with the skincrib client API.",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Skincrib/skincrib-client.git"
+  },
+  "keywords": [
+    "skincrib",
+    "skincrib-client",
+    "csgo"
+  ],
+  "author": "sampli",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Skincrib/skincrib-client/issues"
+  },
+  "homepage": "https://github.com/Skincrib/skincrib-client#readme"
+}
