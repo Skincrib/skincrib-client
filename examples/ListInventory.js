@@ -36,3 +36,5 @@ market.on('authenticated', (message) => {
         console.error(err);
     });
 });
+
+market.authenticate();
