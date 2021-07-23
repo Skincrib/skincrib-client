@@ -120,9 +120,9 @@ module.exports = class SkincribClient extends EventEmitter{
             assert((items && Array.isArray(items) && items.length > 0), 'You must include an array of at least one item to create listings.');
             //verify items are valid
             items.forEach(item=>{
-                assert(item?.assetid, `Item index: ${items.indexOf(item)} must include an assetid.`);
-                assert(item?.price, `Item index: ${items.indexOf(item)} must include a price.`);
-                assert(item?.percentIncrease, `Item index: ${items.indexOf(item)} must include a percentIncrease.`);
+                assert(item.assetid, `Item index: ${items.indexOf(item)} must include an assetid.`);
+                assert(item.price, `Item index: ${items.indexOf(item)} must include a price.`);
+                assert(item.percentIncrease, `Item index: ${items.indexOf(item)} must include a percentIncrease.`);
             });
 
             socket.emit('p2p:listings:new', {items}, (err, data)=>{
